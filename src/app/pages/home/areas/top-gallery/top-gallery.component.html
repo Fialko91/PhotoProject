@@ -1,3 +1,20 @@
-<p>
-  top-gallery works!
-</p>
+<section class="top-gallery">
+
+  <swiper [config]="config" class="case_top_galley">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/assets/img/top_gallery/IMG_8145.jpg" alt="img" class="swiper-wrapper_item"></div>
+      <div class="swiper-slide"><img src="/assets/img/top_gallery/IMG_4554.jpg" alt="img" class="swiper-wrapper_item"></div>
+      <div class="swiper-slide"><img src="/assets/img/top_gallery/IMG_6000.jpg" alt="img" class="swiper-wrapper_item"></div>
+      <div class="swiper-slide"><img src="/assets/img/top_gallery/IMG_8533.jpg" alt="img" class="swiper-wrapper_item"></div>
+    </div>
+    <div class="gallery_text">
+      <h1 class="gallery_text_item">СВАДЕБНАЯ СЪЕМКА</h1>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper>
+
+</section>

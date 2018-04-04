@@ -10,6 +10,10 @@ import { ServicesAndPricesComponent } from './pages/home/areas/services-and-pric
 import { UsefulArticlesComponent } from './pages/home/areas/useful-articles/useful-articles.component';
 import { ContactsComponent } from './pages/home/areas/contacts/contacts.component';
 import { FooterComponent } from './pages/home/areas/footer/footer.component';
+import { SwiperModule } from 'angular2-useful-swiper';
+import { Page404Component } from './pages/home/areas/page404/page404.component';
+import { AppRoutingModule } from './app-routing.modules';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,11 +27,14 @@ import { FooterComponent } from './pages/home/areas/footer/footer.component';
     ServicesAndPricesComponent,
     UsefulArticlesComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
-    SwiperModules
+    SwiperModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,53 @@
+@import "../../../../../styles"
+
+
+.services-and-prices_wrapper
+  text-align: center
+  max-width: 1034px
+  width: 100%
+  padding: 40px 0 0
+.container_wrapper
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding-top: 25px
+  padding-bottom: 60px
+.container_item
+  margin-top: 20px
+  position: relative
+  cursor: pointer
+  box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+  transition: all .25s ease-out
+  &:hover
+    box-shadow: none !important
+    transition: all .25s ease-out
+    .item_name
+      background-color: transparent
+      font-weight: bold
+      z-index: 2
+      transition: all .25s ease-out
+    .overlay_bc
+      background-color: rgba(255, 255, 255, 0.8)
+      transition: all .25s ease-out
+
+
+.item_name
+  position: absolute
+  width: 100%
+  bottom: 0
+  font-size: 36px
+  font-family: $Montserrat
+  background-color: rgba(255, 255, 255, 0.8)
+  height: 95px
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: all .25s ease-out
+
+.overlay_bc
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  transition: all .25s ease-out
+

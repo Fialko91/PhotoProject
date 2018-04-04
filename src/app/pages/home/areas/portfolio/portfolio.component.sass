@@ -1,0 +1,61 @@
+@import "../../../../../styles"
+
+
+.portfolio_wrapper
+  text-align: center
+  max-width: 1034px
+  width: 100%
+  padding: 40px 22px 0
+.container_wrapper
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  padding-top: 20px
+.container_item
+  max-width: 325px
+  position: relative
+  margin: 25px auto
+  box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+  cursor: pointer
+.images_item
+  max-width: 325px
+.name_item
+  position: absolute
+  background-color: rgba(255, 255, 255, 0.8)
+  bottom: 0
+  left: 50%
+  transform: translate(-50%, 0)
+  font-size: 20px
+  width: 100%
+  font-family: $Montserrat
+  line-height: 50px
+  z-index: 1
+
+.my_btn
+  color: #6699ff
+  font-size: 24px
+  background-color: transparent
+  border: 2px solid #6699ff
+  padding: 0 40px
+  line-height: 50px
+  transition: all .25s ease-out
+  font-family: $Montserrat
+  margin: 20px 0
+  cursor: pointer
+  outline: none
+  &:hover
+    color: black
+    background-color: #6699ff
+    border: 2px solid black
+    transition: all .25s ease-out
+.overlay_bg
+  background-color: rgba(0, 0, 0, 0.4)
+  width: 100%
+  height: 100%
+  top: 0
+  position: absolute
+  transition: all .25s ease-out
+  cursor: pointer
+  &:hover
+    background-color: transparent
+    transition: all .25s ease-out

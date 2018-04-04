@@ -1,8 +1,5 @@
-// import
-@import "bourbon"
-
 // var
-$default-font: "roboto", sans-serif
+$Montserrat: "Montserrat", sans-serif
 $accent: orange
 
 // my-mixins
@@ -21,3 +18,22 @@ $accent: orange
 		width: 100%
 		height: 0
 		display: inline-block
+body
+  font-family: $Montserrat
+
+.wrapper
+  width: 100%
+  max-width: 1600px
+
+.wpar
+  width: 100%
+  max-width: 1034px
+  margin: 0 auto
+  padding: 0 22px
+
+=shadow
+  box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+
+=transition
+  transition: all .25s ease-out
+
