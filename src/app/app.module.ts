@@ -14,6 +14,7 @@ import { SwiperModule } from 'angular2-useful-swiper';
 import { Page404Component } from './pages/home/areas/page404/page404.component';
 import { AppRoutingModule } from './app-routing.modules';
 import { FormsModule } from '@angular/forms';
+import { Pages404Component } from './pages/pages404/pages404.component';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { FormsModule } from '@angular/forms';
     UsefulArticlesComponent,
     ContactsComponent,
     FooterComponent,
-    Page404Component
+    Pages404Component
   ],
   imports: [
     BrowserModule,
