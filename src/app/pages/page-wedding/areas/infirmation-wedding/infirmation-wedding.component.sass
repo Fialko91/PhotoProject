@@ -1,0 +1,25 @@
+@import "../../../../../styles"
+
+
+.information_wedding_wrapper
+  padding: 0 10px
+  &::before
+    content: " "
+    height: 4px
+    width: 100%
+    background: radial-gradient(ellipse at 50% 50%,rgba(0,0,0,.5) 0,rgba(255,255,255,0) 65%)
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)
+  .name_information
+    text-align: center
+    font-weight: bold
+    font-size: 24px
+    font-family: $Montserrat
+    padding-bottom: 58px
+    padding-top: 20px
+  .text_information
+    font-size: 16px
+    font-weight: bold
+    font-family: $Montserrat
+    padding-bottom: 170px

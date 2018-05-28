@@ -12,17 +12,15 @@ export class TopGalleryComponent implements OnInit {
           paginationClickable: true,
           nextButton: '.swiper-button-next',
           prevButton: '.swiper-button-prev',
-          spaceBetween: 30,
-          autoHeight: true
+          autoplay: 2000,
+          speed: 1500,
+          loop: true
   };
-  ///
+
   constructor() { }
 
   ngOnInit() {}
 
-  ///
-
-  ///
 }
 
 

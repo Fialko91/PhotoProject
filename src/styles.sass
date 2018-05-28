@@ -1,5 +1,6 @@
 @import "sass/my-css-reset"
 @import "sass/vars"
+@import "~@angular/material/prebuilt-themes/indigo-pink.css"
 
 .wrap
   width: 100%
@@ -7,12 +8,21 @@
   margin: 0 auto
 h2
   font-family: $Montserrat
-  font-size: 36px
+  font-size: 30px
   font-weight: bold
+  @media screen and (max-width: 992px)
+    font-size: 24px
+.footer, .footer-page-portfolio, .footer_wedding
+  background-color: rgba(0, 153, 255, 0.65)
 
-.portfolio, .useful-articles
-  background-color: #e5e5e5
-
-.footer
-  background-color: #6699ff
-
+.visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  clip-path: inset(50%)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+  white-space: nowrap

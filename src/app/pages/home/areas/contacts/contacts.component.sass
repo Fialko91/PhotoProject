@@ -1,41 +1,56 @@
 @import "../../../../../styles"
-
+.contacts_wrapper
+  &::before
+    content: " "
+    height: 4px
+    width: 100%
+    background: radial-gradient(ellipse at 50% 50%,rgba(0,0,0,.5) 0,rgba(255,255,255,0) 65%)
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 0)
 .container_wrapper
-  width: 100%
-  max-width: 1034px
+  //width: 100%
+  //max-width: 1034px
   flex-wrap: wrap
-.container_wrapper
   display: flex
-  justify-content: space-between
-  padding-top: 55px
+  justify-content: space-around
+  //margin: 0 auto
+  padding: 25px 10px 0
+
 .section_name
   text-align: center
-  padding-top: 27px
+  padding-top: 20px
+  width: 100%
+
 .container_item
-  display: flex
-  flex-direction: column
-  max-width: 380px
+  width: 350px
+  padding-bottom: 50px
+
 .phone, .mail
   font-family: $Montserrat
-  font-size: 30px
+  font-size: 20px
 .mail
   padding-top: 30px
 .worlds
   padding-top: 30px
   display: flex
-  justify-content: space-around
   &_item
     transition: all .25s ease-out
+    margin: 0 auto
     &:hover
-      transform: scale(1.1)
+      transform: scale(1.2)
       transition: all .25s ease-out
-
+.fb, .inst
+  width: 40px
+.yt
+  height: 40px
 .container_input_text
   font-family: $Montserrat
-  font-size: 18px
+  font-size: 16px
   font-weight: 500
-.input_text, .input_mail, .input_number
   width: 100%
+.input_text, .input_mail, .input_number
+  width: 97%
   height: 40px
   padding-left: 5px
   margin-top: 10px
@@ -43,10 +58,10 @@
   font-family: $Montserrat
   &::placeholder
     font-size: 14px
-    color: black
+    color: gray
 .input_messenger
-  width: 100%
-  max-height: 200px
+  width: 97%
+  //max-height: 200px
   padding-left: 5px
   padding-top: 10px
   resize: none
@@ -55,23 +70,22 @@
   font-family: $Montserrat
   &::placeholder
     font-size: 14px
-    color: black
-
-
+    color: grey
 .input_btn
-  color: #6699ff
-  font-size: 21px
+  color: black
+  position: relative
+  font-size: 18px
   background-color: transparent
-  border: 2px solid #6699ff
-  padding: 0 25px
-  line-height: 50px
+  border: 2px solid rgba(102, 204, 255, 0.65)
+  padding: 0 20px
+  line-height: 40px
   transition: all .25s ease-out
   font-family: $Montserrat
-  margin: 20px 0
+  margin: 20px 0 20px
   cursor: pointer
   outline: none
   &:hover
     color: black
-    background-color: #6699ff
+    background-color: rgba(102, 204, 255, 0.65)
     border: 2px solid black
     transition: all .25s ease-out

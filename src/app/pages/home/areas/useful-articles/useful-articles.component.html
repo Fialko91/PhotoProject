@@ -4,25 +4,45 @@
       <h2 class="section_name">Полезные статьи</h2>
       <div class="container_wrapper">
         <div class="container_items">
-          <img src="/assets/img/1-2.jpg" alt="img" class="item_images">
-          <p class="name_item">Lorem ipsum dolor.</p>
-          <p class="contain_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aspernatur debitis et harum ipsum labore magni molestiae nam nemo, nihil, nulla placeat provident quidem, quos rem sed sunt voluptates!</p>
-          <button class="btn_mnu">Читать далее</button>
+          <img src="/assets/img/choice.jpg" alt="img" class="item_images">
+          <p class="name_item">Выбор фотографа</p>
+          <p class="contain_item">Фотограф — один из важнейших свадебных подрядчиков. Мы подготовили для тебя советы, которые помогут избежать ошибок при выборе фотографа на свадьбу.
+            <br>
+            <br>
+            1. Выбор фотографа <br>
+            С чего следует начать выбор? Прежде всего это составить список понравившихся фотографов. Где искать фотографов? Социальные сети, сейчас очень популярный инструмент для поиска различных услуг, развлечений и в том числе фотографов. Друзья, родственники или знакомые кто уже пользовался услугами фотографов и могут порекомендовать достойного кандидата. Изучите портфолио на сайте фотографа — это позволит понять стиль его работы. Не стоит забывать и то, что на сайте собраны самые лучшие работы. Желательно при выборе увидеть всю серию, весь свадебный день, чтобы составить полную картину стиля и манеры съемки.
+          </p>
+          <button class="btn_mnu" mat-ripple >Читать далее</button>
+          <!--<button class="btn_mnu" mat-ripple (click)="openDialog()" >Читать далее</button>-->
         </div>
         <div class="container_items">
-          <img src="/assets/img/1-2.jpg" alt="img" class="item_images">
-          <p class="name_item">Lorem ipsum dolor.</p>
-          <p class="contain_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aspernatur debitis et harum ipsum labore magni molestiae nam nemo, nihil, nulla placeat provident quidem, quos rem sed sunt voluptates!</p>
-          <button class="btn_mnu">Читать далее</button>
+          <img src="/assets/img/book.jpg" alt="img" class="item_images">
+          <p class="name_item">Причины печать свадебную книгу</p>
+          <p class="contain_item">7 причин напечатать свадебную фотокнигу <br>
+            <br>
+            1. Одна из первых семейных реликвий <br>
+            Наверное многие помнят родительские свадебные альбомы? А сколько раз вы их пересматривали. Это память которая храниться годами и десятилетиями. А ведь представьте через 5, 10 лет сесть уже вместе со своими детьми и пересмотреть свадебную фотокнигу, прочувствовать все моменты и переживания этого дня. Это бесценно.
+          </p>
+          <button class="btn_mnu" mat-ripple routerLink="/pages404">Читать далее</button>
         </div>
         <div class="container_items">
-          <img src="/assets/img/1-2.jpg" alt="img" class="item_images">
-          <p class="name_item">Lorem ipsum dolor.</p>
-          <p class="contain_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aspernatur debitis et harum ipsum labore magni molestiae nam nemo, nihil, nulla placeat provident quidem, quos rem sed sunt voluptates!</p>
-          <button class="btn_mnu">Читать далее</button>
+          <img src="/assets/img/НОВЫЕ/ПОЛЕЗНЫЕ%20СТАТЬИ/свадебная%20подготовка.jpg" alt="img" class="item_images">
+          <p class="name_item">Свадебная подготовка.</p>
+          <p class="contain_item">20 основных шагов при подготовке к свадьбе <br>
+            <br>
+            Чтобы не запутаться и подготовиться к этому дню, получая удовольствие от организации и самого свадебного дня. Предлагаю Вам, ознакомиться с 20 этапами подготовки.
+            <br>
+            <br>
+            1.	Определиться с датой и бюджетом свадьбы. <br>
+            2.	Составить список гостей. <br>
+            3.	Выбрать и купить обручальные кольца. <br>
+            4.	Выбрать место проведения свадьбы и зарезервировать его. Помните, что, если праздник планируется в летний период, рестораны и загородные отели бронировать необходимо задолго до даты свадьбы.<br>
+            5.	Выбрать и заказать свадебное платье и аксессуары, а также костюм и аксессуары для жениха. <br>
+          </p>
+          <button class="btn_mnu" mat-ripple routerLink="/pages404">Читать далее</button>
         </div>
       </div>
-      <button class="btn_all">Все статьи</button>
+      <button class="btn_all" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageBlog" href="#toolbar-blog">Все статьи</button>
     </div>
   </div>
 </section>

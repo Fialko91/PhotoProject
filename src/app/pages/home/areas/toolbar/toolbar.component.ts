@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,14 +8,11 @@ import {Component, HostListener, OnInit} from '@angular/core';
 export class ToolbarComponent implements OnInit {
 
   hidden: boolean;
+  showMenu = false;
+
   constructor() {
   }
 
-  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
-
-  someMethod() {
-    this.trigger.openMenu();
-  }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll($event) {
@@ -23,6 +20,11 @@ export class ToolbarComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  res(e: any) {
+    const w = e.srcElement.innerWidth;
+    w < 768 ? this.showMenu = false : this.showMenu = true;
   }
 
   isHidden(): boolean {

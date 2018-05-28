@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
   <div class="wrap">
     <div class="contacts_wrapper">
       <h2 class="section_name">Контакты</h2>
@@ -6,24 +6,24 @@
         <div class="container_item">
           <p class="phone">Телефон:
             <br>
-            +38-093-534-53-71 (Viber)</p>
+            093-534-53-71 (Viber)</p>
           <p class="mail">E-mail:
             <br>
             ievgeniiosokin@gmail.com</p>
           <div class="worlds">
-            <a href="#" class="worlds_item"><img src="/assets/img/fb.png" alt="img"></a>
-            <a href="#" class="worlds_item"><img src="/assets/img/insta.png" alt="img"></a>
-            <a href="https://www.youtube.com/channel/UCmYHwS5zsnpeyeaCmXr31Hw" class="worlds_item"><img src="/assets/img/yt.png" alt="img"></a>
+            <a href="https://www.facebook.com/evgeniosokin" class="worlds_item" target="_blank"><img src="/assets/img/fb.png" alt="img" class="fb"></a>
+            <a href="https://www.instagram.com/evgeniyosokin/" class="worlds_item" target="_blank"><img src="/assets/img/insta.png" alt="img" class="inst"></a>
+            <a href="https://www.youtube.com/channel/UCmYHwS5zsnpeyeaCmXr31Hw" class="worlds_item" target="_blank"><img src="/assets/img/yt.png" alt="img" class="yt"></a>
           </div>
         </div>
         <div class="container_item">
-          <form name="text" class="item_input">
+          <form (submit)="send()" name="text" class="item_input">
             <p class="container_input_text">Оставьте заявку и я обязательно свяжусь с Вами в удобное для Вас  время</p>
             <input type="text" size="20" class="input_text" placeholder="Имя*">
-            <input type="email" class="input_mail" placeholder="E-mail">
+            <input [(ngModel)]="email" name="email" type="email" class="input_mail" placeholder="E-mail">
             <input type="tel" class="input_number" placeholder="Телефон*" pattern="0">
             <textarea name="comment" rows="10" placeholder="Сообщение" class="input_messenger"></textarea>
-            <input type="submit" value="Отправить" class="input_btn">
+            <button type="submit" mat-ripple class="input_btn">Отправить</button>
           </form>
         </div>
       </div>

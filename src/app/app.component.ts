@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {FirebaseService} from './services/firebase.service';
+
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'app';
+  // title = 'app';
+  // portfolio: any;
+  //
+  // constructor(private fb: FirebaseService) {
+  //   this.fb.getGallery().subscribe(por => {
+  //     this.portfolio = por;
+  //     console.log(por);
+  //   });
+  // }
 }

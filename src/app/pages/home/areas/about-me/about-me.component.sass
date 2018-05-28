@@ -3,20 +3,45 @@
 .about_me_wrapper
   max-width: 932px
   margin: 0 auto
-  padding-top: 30px
-  padding-bottom: 168px
+  padding: 25px 10px 140px
 .name_section
   text-align: center
 .content_container
-  padding-top: 50px
+  //padding-top: 25px
   display: flex
   justify-content: space-between
 .my_photo
   box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+  margin: 20px auto 0
+  height: 100%
 .about_me_information
   max-width: 629px
   font-size: 16px
   font-family: $Montserrat
+  padding-top: 20px
+  padding-left: 10px
   & strong
     font-weight: bold
     font-size: 16px
+  //@media screen and (max-width: 836px)
+  //  padding-left: 0
+
+
+@media screen and (max-width: 992px)
+  .about_me_wrapper
+    padding-bottom: 120px
+  .content_container
+    flex-wrap: wrap
+@media screen and (max-width: 760px)
+  .about_me_wrapper
+    padding-bottom: 90px
+  .about_me_information
+    padding-left: 0
+  .name_section
+    font-size: 24px
+@media screen and (max-width: 480px)
+  .about_me_wrapper
+    padding-bottom: 80px
+@media screen and (max-width: 320px)
+  .about_me_wrapper
+    padding-bottom: 50px

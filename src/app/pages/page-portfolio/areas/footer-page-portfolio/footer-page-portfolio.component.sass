@@ -1,0 +1,46 @@
+@import "../../../../../styles"
+
+
+.section_wrapper
+  width: 100%
+  margin: 0 auto
+  max-width: 1034px
+  text-align: center
+  padding-top: 25px
+  padding-bottom: 15px
+
+.container_item
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  .logo
+    padding-bottom: 15px
+  .footer_information
+    font-family: $Montserrat
+    font-size: 16px
+    line-height: 22px
+    padding-bottom: 15px
+  .worlds
+    display: flex
+    justify-content: space-around
+    padding-bottom: 15px
+    &_item
+      transition: all .25s ease-out
+      padding: 0 10px
+      &:hover
+        transform: scale(1.1)
+        transition: all .25s ease-out
+
+  .fb, .inst
+    width: 35px
+  .yt
+    height: 35px
+
+  .footer_end
+    padding-top: 25px
+    font-family: $Montserrat
+    font-size: 12px
+    & a
+      text-decoration: none
+      color: #cbcac7
+      font-size: 14px

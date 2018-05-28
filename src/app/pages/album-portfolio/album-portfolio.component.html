@@ -1,3 +1,19 @@
-<p>
-  album-portfolio works!
-</p>
+<app-toolbar></app-toolbar>
+
+
+<section class="gallery-album-portfolio">
+  <div class="wrap">
+    <div class="gallery-album-portfolio-wrapper">
+
+      <div class="container_wrapper" *ngFor="let item of gallery">
+
+        <img src="{{item}}" alt="img" class="album_images">
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<app-footer></app-footer>

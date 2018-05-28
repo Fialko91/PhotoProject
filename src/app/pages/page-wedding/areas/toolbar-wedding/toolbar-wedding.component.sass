@@ -1,0 +1,190 @@
+@import "../../../../../styles"
+
+.toolbar-wedding
+  background-color: rgba(255, 255, 255, 1)
+  position: fixed
+  width: 100%
+  box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+  z-index: 99
+  margin-top: -140px
+.toolbar-wedding_wrapper
+  position: relative
+  z-index: 2
+.toolbar_logo
+  text-align: center
+  padding-top: 5px
+  background-color: white
+  .images_logo
+    background-size: cover
+    background: no-repeat center
+    @media screen and (max-width: 480px)
+      display: none
+//.toolbar_logo
+//  padding-top: 0
+
+.toolbar_nav
+  display: block
+.toolbar_items
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  padding: 12px 0 12px
+  background-color: white
+
+.toolbar_item
+  position: relative
+  transition: all .25s ease-out .20s
+.toolbar_item_link
+  font-family: $Montserrat
+  color: #000
+  font-weight: bold
+  text-decoration: none!important
+  font-size: 16px
+  transition: all .25s ease-out
+  cursor: pointer
+  &:hover
+    color: #66CCFF
+.show
+  &:hover .hover_mnu_items
+    position: absolute
+    top: 20px
+.hover_mnu_items
+  display: block
+  flex-direction: column
+  background-color: rgba(0, 0, 0, 0.7)
+  text-align-last: left
+  margin-top: 8px
+  min-width: 240px
+  position: absolute
+  left: -25%
+  transform: translate(50% 0)
+  top: -700px
+  box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+  transition: all .5s ease-out .15s
+  z-index: -1
+
+.hover_mnu_item
+  display: block
+  padding: 12px 0
+  border-bottom: 1px solid black
+  transition: all .5s ease-out
+.hover_mnu_item_link
+  color: white
+  text-decoration: none
+  padding-left: 19px
+  transition: all .25s ease-out
+  font-family: $Montserrat
+  font-size: 14px
+  &:hover
+    color: #66CCFF
+.toolbar_logo
+  position: relative
+
+@media screen and (max-width: 768px)
+  .toolbar_nav
+    transform: translateY(-700px)
+    position: absolute
+    display: flex
+    flex-direction: column
+    width: 100%
+    left: 50%
+    margin-top: 47px
+    &.active
+      transform: translateY(0) translateX(-50%)
+      left: 50%
+      position: absolute
+
+  .toolbar_items
+    flex-direction: column
+    padding: 0 10px
+  .toolbar_item
+    padding: 9px 10px
+    text-align: left
+    background-color: rgba(0, 0, 0, 0.7)
+  .hover_mnu_items
+    width: 100%
+    top: 0
+    position: relative
+    z-index: 0
+    left: 0
+    box-shadow: none
+    background-color: transparent
+  .show
+    &:hover .hover_mnu_items
+      position: relative
+      top: 0
+  .hover_mnu_item
+    padding: 9px 0
+  .toolbar_item_link
+    color: white
+    font-size: 14px
+
+
+
+.btn_mnu
+  display: none
+  text-align: center
+  outline: none
+  .images_logo_480
+    display: none
+  @media screen and (max-width: 768px)
+    display: block
+    padding: 0 10px
+  @media screen and (max-width: 480px)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 5px 0
+    .images_logo_480
+      display: block
+  .btn_mnu_icon
+    cursor: pointer
+    padding: 10px
+
+@media screen and (max-width: 480px)
+  .toolbar_nav
+    margin-top: 83px
+  .toolbar
+    margin-top: -89px
+.topbutton
+  width: 45px
+  height: 45px
+  background: #6699ff
+  position: fixed
+  bottom: 50px
+  right: 50px
+  cursor: pointer
+  display: flex
+  transition: all .5s ease-out
+  opacity: 0.5
+  align-items: center
+  z-index: 99
+  & img
+    display: flex
+    margin: 0 auto
+    width: 32px
+    height: 21px
+  &:hover
+    box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+    transition: all .5s ease-out
+  @media screen and (max-width: 998px)
+    right: 30px
+    width: 35px
+    height: 35px
+    & img
+      width: 26px
+      height: 16px
+  @media screen and (max-width: 768px)
+    right: 20px
+    width: 25px
+    height: 25px
+    & img
+      width: 20px
+      height: 14px
+  @media screen and (max-width: 320px)
+    right: 10px
+    width: 20px
+    height: 20px
+    & img
+      width: 16px
+      height: 10px

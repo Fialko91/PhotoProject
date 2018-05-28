@@ -1,9 +1,18 @@
 import { Injectable } from '@angular/core';
-import {FirebaseService} from './services/firebase.service';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs/Observable';
+
 
 @Injectable()
 export class FirebaseService {
 
-  constructor() { }
+  constructor(private db: AngularFireDatabase) { }
 
+  getGallery(): Observable<any> {
+    return this.db.object('portfolio/').valueChanges();
+  }
+
+  getGalleryItem(id: number): Observable<any> {
+    return this.db.object(`portfolio/${id}`).valueChanges();
+  }
 }

@@ -1,6 +1,91 @@
 @import "../../../../../styles"
 
 
+//.services-and-prices_wrapper
+//  text-align: center
+//  max-width: 1034px
+//  width: 100%
+//  padding: 40px 10px 0
+//.container_wrapper
+//  display: flex
+//  flex-wrap: wrap
+//  //justify-content: space-between
+//  //padding: 25px 10px 60px
+//  padding: 25px 0 60px
+//  margin: 0 auto
+//
+//.container_item
+//  position: relative
+//  max-width: 100%
+//  background-size: cover
+//  background: no-repeat center
+//  margin: 10px auto
+//  //overflow: hidden
+//  //&:nth-child(1)
+//  //  width: 600px
+//  //  height: 294px
+//  //  background-image: url("/assets/img/1.jpg")
+//  //&:nth-child(2)
+//  //  width: 400px
+//  //  height: 294px
+//  //  background-image: url("/assets/img/2.jpg")
+//  //&:nth-child(3)
+//  //  width: 600px
+//  //  height: 294px
+//  //  background-image: url("/assets/img/4.jpg")
+//  //&:nth-child(4)
+//  //  width: 400px
+//  //  height: 294px
+//  //  background-image: url("/assets/img/3.jpg")
+//  //&:nth-child(5)
+//  //  width: 600px
+//  //  height: 294px
+//  //  background-image: url("/assets/img/5.jpg")
+//  //&:nth-child(6)
+//  //  width: 400px
+//  //  height: 294px
+//  //  background-image: url("/assets/img/6.jpg")
+//  &:hover
+//    box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+//    transition: all .25s ease-out
+//    .overlay_bc
+//      top: 0
+//      transition: all .25s ease-out
+//      background-color: rgba(255, 255, 255, 0.7)
+//    .container_text
+//      background-color: transparent
+//      transition: all .25s ease-out
+//.container_images_item
+//
+//.container_text
+//  position: absolute
+//  font-size: 26px
+//  font-family: $Montserrat
+//  bottom: 0
+//  left: 50%
+//  transform: translate(-50%, 0)
+//  width: 100%
+//  background-color: rgba(255, 255, 255, 0.7)
+//  line-height: 50px
+//  z-index: 2
+//
+//.overlay_bc
+//  position: absolute
+//  width: 100%
+//  height: 100%
+//  background-color: rgba(255, 255, 255, 0)
+//  //bottom: -294px
+//  transition: all .25s ease-out
+//
+//@media screen and (max-width: 992px)
+//  .name_section
+//    font-size: 24px
+//@media screen and (max-width: 768px)
+//  .item_name
+//    font-size: 20px
+
+
+
 .services-and-prices_wrapper
   text-align: center
   max-width: 1034px
@@ -10,44 +95,53 @@
   display: flex
   flex-wrap: wrap
   justify-content: space-between
-  padding-top: 25px
-  padding-bottom: 60px
+  //padding-top: 25px
+  //padding-bottom: 60px
+  //margin: 0 auto
+  padding: 25px 10px 60px
 .container_item
-  margin-top: 20px
+  //margin-top: 20px
   position: relative
   cursor: pointer
   box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
   transition: all .25s ease-out
-  &:hover
-    box-shadow: none !important
-    transition: all .25s ease-out
-    .item_name
-      background-color: transparent
-      font-weight: bold
-      z-index: 2
-      transition: all .25s ease-out
-    .overlay_bc
-      background-color: rgba(255, 255, 255, 0.8)
-      transition: all .25s ease-out
+  margin: 20px auto 0
+  max-width: 590px
+  overflow: hidden
+  //width: 100%
+  //&:hover
+  //  box-shadow: none !important
+  //  transition: all .25s ease-out
+  //  .item_name
+  //    background-color: transparent
+  //    font-weight: bold
+  //    z-index: 2
+  //    transition: all .25s ease-out
+  //  .overlay_bc
+  //    background-color: rgba(255, 255, 255, 0.8)
+  //    transition: all .25s ease-out
 
+  .item_images
+    max-width: 590px
+    width: 100%
+    background-size: cover
+    background: no-repeat center
+//.item_name
+//  position: absolute
+//  width: 100%
+//  bottom: 0
+//  font-size: 36px
+//  font-family: $Montserrat
+//  background-color: rgba(255, 255, 255, 0.8)
+//  height: 95px
+//  display: flex
+//  justify-content: center
+//  align-items: center
+//  transition: all .25s ease-out
 
-.item_name
-  position: absolute
-  width: 100%
-  bottom: 0
-  font-size: 36px
-  font-family: $Montserrat
-  background-color: rgba(255, 255, 255, 0.8)
-  height: 95px
-  display: flex
-  justify-content: center
-  align-items: center
-  transition: all .25s ease-out
-
-.overlay_bc
-  position: absolute
-  width: 100%
-  height: 100%
-  top: 0
-  transition: all .25s ease-out
-
+//.overlay_bc
+//  position: absolute
+//  width: 100%
+//  height: 100%
+//  top: 0
+//  transition: all .25s ease-out
