@@ -1,45 +1,14 @@
-<section class="portfolio-page-portfolio">
+<section class="portfolio-page-portfolio" id="portfolio-page-portfolio">
 
   <div class="wrap">
     <div class="portfolio-page-portfolio_wrapper">
       <h2 class="name_section">Портфолио</h2>
       <div class="container_wrapper">
-        <div class="container_item" routerLink="/AlbumPortfolio" *ngFor="let item of portfolio">
-          <a href="#"><img src="{{ item.banner }}" alt="img" class="images_item"></a>
+        <a class="container_item" routerLink="/AlbumPortfolio/{{item.id}}" *ngFor="let item of portfolio">
+          <img src="{{ item.banner }}" alt="img" class="images_item">
           <p class="name_item">{{ item.AlbumName }}</p>
           <div class="overlay_bg"></div>
-        </div>
-
-        <!--<div class="container_item" routerLink="/pages404">-->
-          <!--<a href="#"><img src="/assets/img/НОВЫЕ/ПОРТФОЛИО/Алена_Женя.jpg" alt="img" class="images_item"></a>-->
-          <!--<p class="name_item">Алена и Женя</p>-->
-          <!--<div class="overlay_bg"></div>-->
-        <!--</div>-->
-        <!--<div class="container_item" routerLink="/pages404">-->
-          <!--<img src="/assets/img/НОВЫЕ/ПОРТФОЛИО/алена_илья.jpg" alt="img" class="images_item">-->
-          <!--<p class="name_item">Алена и Илья</p>-->
-          <!--<div class="overlay_bg"></div>-->
-        <!--</div>-->
-        <!--<div class="container_item" routerLink="/pages404">-->
-          <!--<img src="/assets/img/НОВЫЕ/ПОРТФОЛИО/Алена_Леша.jpg" alt="img" class="images_item">-->
-          <!--<p class="name_item">Алена и Леша</p>-->
-          <!--<div class="overlay_bg"></div>-->
-        <!--</div>-->
-        <!--<div class="container_item" routerLink="/pages404">-->
-          <!--<img src="/assets/img/НОВЫЕ/ПОРТФОЛИО/Даша_Максим.jpg" alt="img" class="images_item">-->
-          <!--<p class="name_item">Даша и Максим</p>-->
-          <!--<div class="overlay_bg"></div>-->
-        <!--</div>-->
-        <!--<div class="container_item" routerLink="/pages404">-->
-          <!--<img src="/assets/img/НОВЫЕ/ПОРТФОЛИО/Лена_Вадим.jpg" alt="img" class="images_item">-->
-          <!--<p class="name_item">Лена и Вадим</p>-->
-          <!--<div class="overlay_bg"></div>-->
-        <!--</div>-->
-        <!--<div class="container_item" routerLink="/pages404">-->
-          <!--<img src="/assets/img/НОВЫЕ/ПОРТФОЛИО/Юля_Стас.jpg" alt="img" class="images_item">-->
-          <!--<p class="name_item">Юля и Стас</p>-->
-          <!--<div class="overlay_bg"></div>-->
-        <!--</div>-->
+        </a>
       </div>
     </div>
   </div>

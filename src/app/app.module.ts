@@ -46,6 +46,8 @@ import { BannerWeddingComponent } from './pages/page-wedding/areas/banner-weddin
 import { ContentWeddingComponent } from './pages/page-wedding/areas/content-wedding/content-wedding.component';
 import { InfirmationWeddingComponent } from './pages/page-wedding/areas/infirmation-wedding/infirmation-wedding.component';
 import { FooterWeddingComponent } from './pages/page-wedding/areas/footer-wedding/footer-wedding.component';
+import { HeroToolbarComponent } from './pages/hero-toolbar/hero-toolbar.component';
+import { HeroFooterComponent } from './pages/hero-footer/hero-footer.component';
 
 
 @NgModule({
@@ -80,7 +82,9 @@ import { FooterWeddingComponent } from './pages/page-wedding/areas/footer-weddin
     BannerWeddingComponent,
     ContentWeddingComponent,
     InfirmationWeddingComponent,
-    FooterWeddingComponent
+    FooterWeddingComponent,
+    HeroToolbarComponent,
+    HeroFooterComponent
   ],
   imports: [
     BrowserModule,
