@@ -48,6 +48,15 @@ import { InfirmationWeddingComponent } from './pages/page-wedding/areas/infirmat
 import { FooterWeddingComponent } from './pages/page-wedding/areas/footer-wedding/footer-wedding.component';
 import { HeroToolbarComponent } from './pages/hero-toolbar/hero-toolbar.component';
 import { HeroFooterComponent } from './pages/hero-footer/hero-footer.component';
+import { PageLoveStoryComponent } from './pages/page-love-story/page-love-story.component';
+import { BannerLoveStoryComponent } from './pages/page-love-story/areas/banner-love-story/banner-love-story.component';
+import { ContentLoveStoryComponent } from './pages/page-love-story/areas/content-love-story/content-love-story.component';
+import { PageFamilyComponent } from './pages/page-family/page-family.component';
+import { BannerFamilyComponent } from './pages/page-family/areas/banner-family/banner-family.component';
+import { ContentFamilyComponent } from './pages/page-family/areas/content-family/content-family.component';
+import { PagePregnancyComponent } from './pages/page-pregnancy/page-pregnancy.component';
+import { BannerPregnancyComponent } from './pages/page-pregnancy/areas/banner-pregnancy/banner-pregnancy.component';
+import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-pregnancy/content-pregnancy.component';
 
 
 @NgModule({
@@ -84,7 +93,16 @@ import { HeroFooterComponent } from './pages/hero-footer/hero-footer.component';
     InfirmationWeddingComponent,
     FooterWeddingComponent,
     HeroToolbarComponent,
-    HeroFooterComponent
+    HeroFooterComponent,
+    PageLoveStoryComponent,
+    BannerLoveStoryComponent,
+    ContentLoveStoryComponent,
+    PageFamilyComponent,
+    BannerFamilyComponent,
+    ContentFamilyComponent,
+    PagePregnancyComponent,
+    BannerPregnancyComponent,
+    ContentPregnancyComponent
   ],
   imports: [
     BrowserModule,

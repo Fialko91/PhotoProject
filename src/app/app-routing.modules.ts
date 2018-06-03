@@ -6,10 +6,17 @@ import { PagePortfolioComponent } from './pages/page-portfolio/page-portfolio.co
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
 import { AlbumPortfolioComponent } from './pages/album-portfolio/album-portfolio.component';
 import { PageWeddingComponent } from './pages/page-wedding/page-wedding.component';
+import { PageLoveStoryComponent } from './pages/page-love-story/page-love-story.component';
+import { PageFamilyComponent } from './pages/page-family/page-family.component';
+import { PagePregnancyComponent } from './pages/page-pregnancy/page-pregnancy.component';
+
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'PagePregnancy', component: PagePregnancyComponent },
+  { path: 'PageFamily', component: PageFamilyComponent },
+  { path: 'PageLoveStory', component: PageLoveStoryComponent },
   { path: 'PageWedding', component: PageWeddingComponent },
   { path: 'AlbumPortfolio/:id', component: AlbumPortfolioComponent },
   { path: 'PageBlog', component: PageBlogComponent },
