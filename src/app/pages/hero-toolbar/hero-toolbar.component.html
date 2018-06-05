@@ -1,4 +1,4 @@
-<section class="toolbar" id="toolbar">
+<section class="hero-toolbar" id="toolbar">
   <div class="wrap">
     <div class="toolbar_wrapper">
       <div class="toolbar_logo">
@@ -6,18 +6,18 @@
         <nav class="toolbar_nav" (window:resize)="res($event)" [class.active]="showMenu ? 'active' : null">
           <ul class="toolbar_items">
             <li class="toolbar_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/" href="#top-gallery" (click)="showMenu = false" class="toolbar_item_link">ГЛАВНАЯ</a></li>
-            <li class="toolbar_item"><a  pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/page-portfolio" href="#portfolio-page-portfolio"  class="toolbar_item_link">ПОРТФОЛИО</a></li>
+            <li class="toolbar_item"><a  pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/page-portfolio" href="#portfolio-page-portfolio" (click)="showMenu = false"  class="toolbar_item_link">ПОРТФОЛИО</a></li>
             <li class="toolbar_item show"><p class="toolbar_item_link ">УСЛУГИ И ЦЕНЫ</p>
               <ul class="hover_mnu_items">
-                <li class="hover_mnu_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageWedding" href="#banner-wedding" class="hover_mnu_item_link">Свадебная фотосессия</a></li>
-                <li class="hover_mnu_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageLoveStory" href="#banner_love_story" class="hover_mnu_item_link">Съёмка Love Story</a></li>
-                <li class="hover_mnu_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageFamily" href="#banner_family" class="hover_mnu_item_link">Семейная съёмка</a></li>
-                <li class="hover_mnu_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PagePregnancy" href="#banner_pregnancy" class="hover_mnu_item_link">Съёмка беременности</a></li>
+                <li class="hover_mnu_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageWedding" href="#banner-wedding" (click)="showMenu = false" class="hover_mnu_item_link">Свадебная фотосессия</a></li>
+                <li class="hover_mnu_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageLoveStory" href="#banner_love_story" (click)="showMenu = false" class="hover_mnu_item_link">Съёмка Love Story</a></li>
+                <li class="hover_mnu_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageFamily" href="#banner_family" (click)="showMenu = false" class="hover_mnu_item_link">Семейная съёмка</a></li>
+                <li class="hover_mnu_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PagePregnancy" href="#banner_pregnancy" (click)="showMenu = false" class="hover_mnu_item_link">Съёмка беременности</a></li>
                 <!--<li class="hover_mnu_item"><a routerLink="/pages404" href="#" class="hover_mnu_item_link">Фотокниги</a></li>-->
-                <li class="hover_mnu_item"><a routerLink="/pages404" href="#" class="hover_mnu_item_link">Фотокниги и сертификаты</a></li>
+                <li class="hover_mnu_item"><a routerLink="/pages404" href="#" (click)="showMenu = false" class="hover_mnu_item_link">Фотокниги и сертификаты</a></li>
               </ul>
             </li>
-            <li class="toolbar_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageBlog" href="#top-gallery-blog" class="toolbar_item_link">ПОЛЕЗНЫЕ СТАТЬИ</a></li>
+            <li class="toolbar_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageBlog" href="#top-gallery-blog" (click)="showMenu = false" class="toolbar_item_link">ПОЛЕЗНЫЕ СТАТЬИ</a></li>
             <li class="toolbar_item"><a pageScroll [pageScrollDuration]="0" [pageScrollOffset]="90" routerLink="/" href="#contacts" (click)="showMenu = false" class="toolbar_item_link">КОНТАКТЫ</a></li>
           </ul>
         </nav>

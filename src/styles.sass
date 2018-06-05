@@ -2,6 +2,8 @@
 @import "sass/vars"
 @import "~@angular/material/prebuilt-themes/indigo-pink.css"
 
+html, body
+  height: 100%
 .wrap
   width: 100%
   max-width: 1034px
@@ -12,8 +14,6 @@ h2
   font-weight: bold
   @media screen and (max-width: 992px)
     font-size: 24px
-.footer, .footer-page-portfolio, .footer_wedding
-  background-color: rgba(0, 153, 255, 0.65)
 
 .visuallyhidden
   border: 0
@@ -26,3 +26,6 @@ h2
   position: absolute
   width: 1px
   white-space: nowrap
+
+.flex
+  flex: 1
