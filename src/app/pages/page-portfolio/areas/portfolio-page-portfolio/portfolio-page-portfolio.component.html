@@ -1,15 +1,13 @@
 <section class="portfolio-page-portfolio" id="portfolio-page-portfolio">
 
-  <div class="wrap">
-    <div class="portfolio-page-portfolio_wrapper">
-      <h2 class="name_section">Портфолио</h2>
-      <div class="container_wrapper">
-        <a class="container_item" routerLink="/AlbumPortfolio/{{item.id}}" *ngFor="let item of portfolio">
-          <img src="{{ item.banner }}" alt="img" class="images_item">
-          <p class="name_item">{{ item.AlbumName }}</p>
-          <div class="overlay_bg"></div>
-        </a>
-      </div>
+  <div class="portfolio-page-portfolio_wrapper wrap">
+    <h2 class="name_section">Портфолио</h2>
+    <div class="container_wrapper">
+      <a class="container_item" routerLink="/AlbumPortfolio/{{item.id}}" *ngFor="let item of portfolio">
+        <img src="{{ item.banner }}" alt="img" class="images_item">
+        <p class="name_item">{{ item.AlbumName }}</p>
+        <div class="overlay_bg"></div>
+      </a>
     </div>
   </div>
 

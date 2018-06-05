@@ -16,13 +16,10 @@ import { Pages404Component } from './pages/pages404/pages404.component';
 import { MatButtonModule, MatCheckboxModule, MatDialogModule, MatRippleModule } from '@angular/material';
 import { PagePortfolioComponent } from './pages/page-portfolio/page-portfolio.component';
 import { FormsModule } from '@angular/forms';
-import { ToolbarPagePortfolioComponent } from './pages/page-portfolio/areas/toolbar-page-portfolio/toolbar-page-portfolio.component';
 import { TopGalleryPagePortfolioComponent } from './pages/page-portfolio/areas/top-gallery-page-portfolio/top-gallery-page-portfolio.component';
 import { PortfolioPagePortfolioComponent } from './pages/page-portfolio/areas/portfolio-page-portfolio/portfolio-page-portfolio.component';
 import { ArticlesPagePortfolioComponent } from './pages/page-portfolio/areas/articles-page-portfolio/articles-page-portfolio.component';
-import { FooterPagePortfolioComponent } from './pages/page-portfolio/areas/footer-page-portfolio/footer-page-portfolio.component';
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
-import { ToolbarBlogComponent } from './pages/page-blog/areas/toolbar-blog/toolbar-blog.component';
 import { TopGalleryBlogComponent } from './pages/page-blog/areas/top-gallery-blog/top-gallery-blog.component';
 import { UsefulArticlesBlogComponent } from './pages/page-blog/areas/useful-articles-blog/useful-articles-blog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -64,13 +61,10 @@ import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-
     ContactsComponent,
     Pages404Component,
     PagePortfolioComponent,
-    ToolbarPagePortfolioComponent,
     TopGalleryPagePortfolioComponent,
     PortfolioPagePortfolioComponent,
     ArticlesPagePortfolioComponent,
-    FooterPagePortfolioComponent,
     PageBlogComponent,
-    ToolbarBlogComponent,
     TopGalleryBlogComponent,
     UsefulArticlesBlogComponent,
     AlbumPortfolioComponent,

@@ -1,17 +1,15 @@
 <section class="portfolio">
 
-  <div class="wrap">
-    <div class="portfolio_wrapper">
-      <h2 class="name_section">Портфолио</h2>
-      <div class="container_wrapper">
-        <a class="container_item" routerLink="/AlbumPortfolio/{{item.id}}" *ngFor="let item of portfolio">
-          <img src="{{ item.banner }}" alt="img" class="images_item">
-          <p class="name_item">{{ item.AlbumName }}</p>
-          <div class="overlay_bg"></div>
-        </a>
-      </div>
-      <button class="my_btn" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/page-portfolio" href="#portfolio-page-portfolio">Подробнее</button>
+  <div class="portfolio_wrapper wrap">
+    <h2 class="name_section">Портфолио</h2>
+    <div class="container_wrapper">
+      <a class="container_item" routerLink="/AlbumPortfolio/{{item.id}}" *ngFor="let item of portfolio">
+        <img src="{{ item.banner }}" alt="img" class="images_item">
+        <p class="name_item">{{ item.AlbumName }}</p>
+        <div class="overlay_bg"></div>
+      </a>
     </div>
+    <button class="my_btn" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/page-portfolio" href="#portfolio-page-portfolio">Подробнее</button>
   </div>
 
 </section>
