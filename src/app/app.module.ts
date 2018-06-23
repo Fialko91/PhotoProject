@@ -16,7 +16,6 @@ import { Pages404Component } from './pages/pages404/pages404.component';
 import { MatButtonModule, MatCheckboxModule, MatDialogModule, MatRippleModule } from '@angular/material';
 import { PagePortfolioComponent } from './pages/page-portfolio/page-portfolio.component';
 import { FormsModule } from '@angular/forms';
-import { TopGalleryPagePortfolioComponent } from './pages/page-portfolio/areas/top-gallery-page-portfolio/top-gallery-page-portfolio.component';
 import { PortfolioPagePortfolioComponent } from './pages/page-portfolio/areas/portfolio-page-portfolio/portfolio-page-portfolio.component';
 import { ArticlesPagePortfolioComponent } from './pages/page-portfolio/areas/articles-page-portfolio/articles-page-portfolio.component';
 import { PageBlogComponent } from './pages/page-blog/page-blog.component';
@@ -47,6 +46,7 @@ import { ContentFamilyComponent } from './pages/page-family/areas/content-family
 import { PagePregnancyComponent } from './pages/page-pregnancy/page-pregnancy.component';
 import { BannerPregnancyComponent } from './pages/page-pregnancy/areas/banner-pregnancy/banner-pregnancy.component';
 import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-pregnancy/content-pregnancy.component';
+// import { MasonryModule } from 'angular2-masonry';
 
 
 @NgModule({
@@ -61,7 +61,6 @@ import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-
     ContactsComponent,
     Pages404Component,
     PagePortfolioComponent,
-    TopGalleryPagePortfolioComponent,
     PortfolioPagePortfolioComponent,
     ArticlesPagePortfolioComponent,
     PageBlogComponent,
@@ -99,6 +98,7 @@ import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFirestoreModule
+    // MasonryModule
   ],
   providers: [
     FirebaseService,

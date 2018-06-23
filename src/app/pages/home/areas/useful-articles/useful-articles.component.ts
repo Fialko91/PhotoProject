@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import {Component, Inject, OnInit} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialog} from '@angular/material';
 
 @Component({
   selector: 'app-useful-articles',
@@ -7,21 +7,17 @@ import { MatDialog } from '@angular/material';
   styleUrls: ['./useful-articles.component.sass']
 })
 export class UsefulArticlesComponent implements OnInit {
-  // private DialogContentExampleDialog: {};
 
   constructor() { }
+
   // constructor(public dialog: MatDialog) { }
   // openDialog() {
-  //   const dialogRef = this.dialog.open(this.DialogContentExampleDialog, {
-  //     // height: '350px',
-  //     // width: '500px'
-  //   });
+  //   const dialogRef = this.dialog.open(this.DialogContentExampleDialog, {});
   //
   //   dialogRef.afterClosed().subscribe(result => {
   //     console.log(`Dialog result: ${result}`);
   //   });
   // }
-
 
   ngOnInit() {
   }

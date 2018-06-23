@@ -9,6 +9,10 @@
   padding-bottom: 90px
   font-size: 36px
   font-family: $Montserrat
+  @media screen and (max-width: 998px)
+    font-size: 30px
+  @media screen and (max-width: 588px)
+    font-size: 24px
 .container_price
   display: flex
   justify-content: space-around
@@ -44,15 +48,13 @@
       left: 50%
       transform: translate(-50%, 0)
       color: #000
-      font-size: 14px
       background-color: transparent
       border: 2px solid rgba(102, 204, 255, 0.65)
       padding: 0 20px
-      line-height: 40px
       transition: all .25s ease-out
-      font-family: $Montserrat
       cursor: pointer
       outline: none
+      font: 400 14px/40px $Montserrat
       &:hover
         color: black
         background-color: rgba(102, 204, 255, 0.65)
@@ -60,7 +62,4 @@
         transition: all .25s ease-out
 .block_information
   padding: 30px 0 80px 20px
-  //line-height: 20px
-  //font-size: 18px
-  //font-family: $Montserrat
   font: 400 18px/20px $Montserrat

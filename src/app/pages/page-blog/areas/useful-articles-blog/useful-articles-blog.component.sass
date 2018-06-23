@@ -3,36 +3,39 @@
 .useful-articles-blog_wrapper
   text-align: center
   padding: 45px 0 0
-.container_wrapper
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
-  padding: 25px 10px 50px
-.container_items
-  max-width: 320px
-  margin: 0 auto
-  width: 100%
-  @media screen and (max-width: 996px)
-    max-width: 100%
-.item_images
-  max-width: 190px
-  max-height: 190px
-  box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
-
-.name_item
-  padding-top: 15px
-  font-size: 24px
-  font-family: $Montserrat
-  text-align: left
-
-.contain_item
-  padding-top: 30px
-  text-align: left
-  font-family: $Montserrat
-  font-size: 16px
-  line-height: 22px
-  text-overflow: ellipsis
-//.btn_mnu
+//.container_wrapper
+//  display: flex
+//  flex-wrap: wrap
+//  justify-content: space-between
+//  padding: 25px 10px 100px
+//.container_items
+//  max-width: 320px
+//  margin: 0 auto
+//  width: 100%
+//  //display: flex
+//  //position: relative
+//  //max-height: 565px
+//  //overflow: hidden
+//  //box-sizing: border-box
+//.item_images
+//  width: 250px
+//  //height: auto
+//  box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+//
+//.name_item
+//  padding-top: 15px
+//  text-align: left
+//  user-select: none
+//  font: 400 24px/26px $Montserrat
+//.contain_item
+//  padding-top: 30px
+//  text-align: left
+//  font: 400 16px/22px $Montserrat
+//  text-overflow: ellipsis
+//  user-select: none
+//  //max-height: 565px
+//  //overflow: hidden
+////.btn_mnu
 //  color: black
 //  font-size: 14px
 //  background-color: transparent
@@ -44,8 +47,8 @@
 //  cursor: pointer
 //  outline: none
 //  position: absolute
-//  bottom: 35px
-//  left: 50%
+//  bottom: 0
+//  //left: 50%
 //  transform: translate(-50%, 0)
 //  &:hover
 //    color: black
@@ -53,16 +56,53 @@
 //    border: 2px solid black
 //    transition: all .25s ease-out
 
-@media screen and (max-width: 915px)
-  .container_items
-    padding-bottom: 10px
-@media screen and (max-width: 480px)
-  .container_items
-    max-width: 280px
-  .name_item
-    font-size: 18px
-  .contain_item
-    font-size: 14px
+
+
+.container_wrapper
+  padding: 25px 10px 100px
+
+  .items_container
+    padding-top: 25px
+    .item_images
+      width: 250px
+      float: left
+      margin: 70px 20px 0 0
+      box-shadow: 0 3px 9px -1px rgba(0,0,0,0.7)
+    .name_item
+      text-align: center
+      padding-top: 15px
+      user-select: none
+      font: 400 24px/26px $Montserrat
+      //white-space: nowrap
+    .contain_item
+      padding-top: 30px
+      text-align: left
+      font: 400 16px/22px $Montserrat
+      text-overflow: ellipsis
+      user-select: none
+
+
+
+@media screen and (max-width: 996px)
+  .items_container
+    max-width: 100%
+    //padding-bottom: 55px
+@media screen and (max-width: 588px)
+  .container_wrapper
+    padding: 10px 10px 70px
+    .items_container
+      .item_images
+        margin: 30px 20px 0 0
+        float: none
+        clear: both
+      .name_item
+        font-size: 18px
+      .contain_item
+        font-size: 14px
+
 @media screen and (max-width: 320px)
-  .container_items
+  .items_container
     margin: 0
+
+
+

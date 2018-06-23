@@ -14,18 +14,20 @@
     position: absolute
     left: 50%
     transform: translate(-50%, 0)
-  .section_name
+  .name_section
     margin-top: 20px
+    user-select: none
 .container_wrapper
   display: flex
   flex-wrap: wrap
   justify-content: space-between
   padding: 25px 10px 0
 .container_items
+  padding-top: 20px
   max-width: 320px
   margin: 0 auto
   width: 100%
-  height: 460px
+  min-height: 620px
   position: relative
   @media screen and (max-width: 996px)
     max-width: 100%
@@ -40,17 +42,16 @@
   font-size: 24px
   font-family: $Montserrat
   text-align: left
+  user-select: none
 
 .contain_item
   padding-top: 30px
   text-align: left
-  //font-family: $Montserrat
-  //font-size: 16px
-  //line-height: 22px
   overflow: hidden
-  max-height: 150px
+  max-height: 340px
   text-overflow: ellipsis
   font: 400 16px/22px $Montserrat
+  user-select: none
 .btn_mnu
   color: black
   //font-size: 14px
@@ -99,6 +100,7 @@
   .name_item
     font-size: 18px
   .contain_item
+    max-height: 330px
     font-size: 14px
 @media screen and (max-width: 320px)
   .container_items

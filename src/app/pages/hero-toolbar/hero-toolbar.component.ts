@@ -10,6 +10,7 @@ export class HeroToolbarComponent implements OnInit {
 
   hidden: boolean;
   showMenu = false;
+  // show = console.log('aaa');
 
   constructor() { }
 

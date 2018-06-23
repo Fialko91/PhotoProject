@@ -12,7 +12,7 @@
         </p>
         <img src="/assets/img/polar.png" alt="img" class="pages404_images">
       </div>
-      <button class="pages404_btn" mat-ripple routerLink="">На главную</button>
+      <button class="pages404_btn" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/" href="#top-gallery" (click)="showMenu = false">На главную</button>
     </div>
   </div>
 </section>

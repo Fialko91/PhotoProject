@@ -1,13 +1,30 @@
 <section class="gallery-album-portfolio">
-  <div class="wrap">
-    <div class="gallery-album-portfolio-wrapper">
+  <div class="gallery-album-portfolio-wrapper wrap">
 
-      <div class="container_wrapper" *ngFor="let item of gallery">
-
-        <img src="{{item}}" alt="img" class="album_images">
-
-      </div>
-
+    <div class="container_wrapper" *ngFor="let item of gallery">
+      <img src="{{item}}" alt="img" class="album_images">
     </div>
+
+
+    <!--<masonry>-->
+      <!--<masonry-brick class="container_wrapper" *ngFor="let item of gallery">-->
+        <!--<img src="{{item}}" alt="img" class="album_images" >-->
+      <!--</masonry-brick>-->
+    <!--</masonry>-->
+
+    <!--<div class="swiper-container gallery-top">-->
+      <!--<div class="swiper-wrapper" *ngFor="let item of gallery">-->
+        <!--<img src="{{item}}" class="swiper-slide" >-->
+      <!--</div>-->
+      <!--&lt;!&ndash; Add Arrows &ndash;&gt;-->
+      <!--<div class="swiper-button-next swiper-button-white"></div>-->
+      <!--<div class="swiper-button-prev swiper-button-white"></div>-->
+    <!--</div>-->
+    <!--<div class="swiper-container gallery-thumbs">-->
+      <!--<div class="swiper-wrapper" *ngFor="let item of gallery">-->
+        <!--<img src="{{item}}" class="swiper-slide" >-->
+      <!--</div>-->
+    <!--</div>-->
+
   </div>
 </section>
