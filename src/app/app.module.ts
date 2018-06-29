@@ -8,7 +8,7 @@ import { TopGalleryComponent } from './pages/home/areas/top-gallery/top-gallery.
 import { AboutMeComponent } from './pages/home/areas/about-me/about-me.component';
 import { PortfolioComponent } from './pages/home/areas/portfolio/portfolio.component';
 import { ServicesAndPricesComponent } from './pages/home/areas/services-and-prices/services-and-prices.component';
-import { UsefulArticlesComponent } from './pages/home/areas/useful-articles/useful-articles.component';
+import { UsefulArticlesComponent} from './pages/home/areas/useful-articles/useful-articles.component';
 import { ContactsComponent } from './pages/home/areas/contacts/contacts.component';
 import { SwiperModule } from 'angular2-useful-swiper';
 import { AppRoutingModule } from './app-routing.modules';
@@ -46,8 +46,8 @@ import { ContentFamilyComponent } from './pages/page-family/areas/content-family
 import { PagePregnancyComponent } from './pages/page-pregnancy/page-pregnancy.component';
 import { BannerPregnancyComponent } from './pages/page-pregnancy/areas/banner-pregnancy/banner-pregnancy.component';
 import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-pregnancy/content-pregnancy.component';
-// import { MasonryModule } from 'angular2-masonry';
-
+import { UsefulComponent } from './popaps/useful/useful.component';
+import { NgxMasonryModule } from 'ngx-masonry';
 
 @NgModule({
   declarations: [
@@ -81,7 +81,11 @@ import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-
     ContentFamilyComponent,
     PagePregnancyComponent,
     BannerPregnancyComponent,
-    ContentPregnancyComponent
+    ContentPregnancyComponent,
+    UsefulComponent
+  ],
+  entryComponents: [
+    UsefulComponent
   ],
   imports: [
     BrowserModule,
@@ -97,8 +101,8 @@ import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireStorageModule,
-    AngularFirestoreModule
-    // MasonryModule
+    AngularFirestoreModule,
+    NgxMasonryModule
   ],
   providers: [
     FirebaseService,

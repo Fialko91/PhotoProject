@@ -1,0 +1,19 @@
+{
+  "articuls": {
+    "0": {
+      "banner": "https://firebasestorage.googleapis.com/v0/b/photoproject-ee13f.appspot.com/o/choice.jpg?alt=media&token=46f6956c-4693-4d40-b77d-56a9f8113e21",
+      "ArticulsName": "Выбор фотографа",
+      "text": "werwerwerwerwerw"
+    },
+    "1": {
+      "banner": "https://firebasestorage.googleapis.com/v0/b/photoproject-ee13f.appspot.com/o/book.jpg?alt=media&token=f99ed926-fb0b-4f78-a3ff-e7551d92bd59",
+      "ArticulsName": "Причина печатать свадебную книгу",
+      "text": "werwerwerwerwerw"
+    },
+    "2": {
+      "banner": "https://firebasestorage.googleapis.com/v0/b/photoproject-ee13f.appspot.com/o/%D1%81%D0%B2%D0%B0%D0%B4%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BA%D0%B0.jpg?alt=media&token=ad523a05-7ad0-4571-91ca-b1ef83ca0588",
+      "ArticulsName": "Свадебная подготовка",
+      "text": "werwerwerwerwerw"
+    }
+  }
+}

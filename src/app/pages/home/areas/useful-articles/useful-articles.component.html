@@ -12,10 +12,11 @@
             1. Выбор фотографа <br>
             С чего следует начать выбор? Прежде всего это составить список понравившихся фотографов. Где искать фотографов? Социальные сети, сейчас очень популярный инструмент для поиска различных услуг, развлечений и в том числе фотографов. Друзья, родственники или знакомые кто уже пользовался услугами фотографов и могут порекомендовать достойного кандидата.
           </p>
-          <button class="btn_mnu" mat-ripple  pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35"  >Читать далее</button>
+
+          <button mat-button (click)="openDialog('Фотограф — один из важнейших свадебных подрядчиков. Мы подготовили для тебя советы, которые помогут избежать ошибок при выборе фотографа на свадьбу. С чего следует начать выбор? Прежде всего это составить список понравившихся фотографов. Где искать фотографов? Социальные сети, сейчас очень популярный инструмент для поиска различных услуг, развлечений и в том числе фотографов. Друзья, родственники или знакомые кто уже пользовался услугами фотографов и могут порекомендовать достойного кандидата.')" class="btn_mnu" mat-ripple  pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35"  >Читать далее</button>
+          <!--<button (click)="ClickButton()" class="btn_mnu" mat-ripple  pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35"  >Читать далее</button>-->
           <!--<button class="btn_mnu" mat-button (click)="openDialog()" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35" routerLink="/PageBlog" href="#choice" >Читать далее</button>-->
-          <!--<button class="btn_mnu" mat-ripple (click)="openDialog()" >Читать далее</button>-->
-        </div>
+         </div>
         <div class="container_items">
           <img src="/assets/img/book.jpg" alt="img" class="item_images">
           <p class="name_item">Причины печать свадебную книгу</p>
@@ -24,7 +25,7 @@
             1. Одна из первых семейных реликвий <br>
             Наверное многие помнят родительские свадебные альбомы? А сколько раз вы их пересматривали. Это память которая храниться годами и десятилетиями. А ведь представьте через 5, 10 лет сесть уже вместе со своими детьми и пересмотреть свадебную фотокнигу, прочувствовать все моменты и переживания этого дня. Это бесценно.
           </p>
-          <button class="btn_mnu" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35" routerLink="/PageBlog" href="#print" >Читать далее</button>
+          <button class="btn_mnu" (click)="openDialog('qwe')" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35" routerLink="/PageBlog" href="#print" >Читать далее</button>
         </div>
         <div class="container_items">
           <img src="/assets/img/НОВЫЕ/ПОЛЕЗНЫЕ%20СТАТЬИ/свадебная%20подготовка.jpg" alt="img" class="item_images">

@@ -11,6 +11,9 @@ export class FirebaseService {
   getGallery(): Observable<any> {
     return this.db.object('portfolio/').valueChanges();
   }
+  getArticul(): Observable<any> {
+    return this.db.object('useful/').valueChanges();
+  }
 
   getGalleryItem(id: number): Observable<any> {
     return this.db.object(`portfolio/${id}`).valueChanges();
