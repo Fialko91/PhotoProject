@@ -6,8 +6,7 @@ import { FirebaseService } from '../../../../services/firebase.service';
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.sass']
 })
-// export class PortfolioComponent implements OnInit {
-export class PortfolioComponent  {
+export class PortfolioComponent implements OnInit {
 
   title = 'app';
   portfolio: any;
@@ -16,5 +15,8 @@ export class PortfolioComponent  {
     this.fb.getGallery().subscribe(por => {
       this.portfolio = por;
     });
+  }
+
+  ngOnInit() {
   }
 }

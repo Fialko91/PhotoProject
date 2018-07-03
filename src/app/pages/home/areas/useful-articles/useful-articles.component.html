@@ -3,45 +3,12 @@
     <div class="useful-articles_wrapper wrap">
       <div class="name_section">Полезные статьи</div>
       <div class="container_wrapper">
-        <div class="container_items">
-          <img src="/assets/img/choice.jpg" alt="img" class="item_images">
-          <p class="name_item">Выбор фотографа</p>
-          <p class="contain_item info_media">Фотограф — один из важнейших свадебных подрядчиков. Мы подготовили для тебя советы, которые помогут избежать ошибок при выборе фотографа на свадьбу.
-            <br>
-            <br>
-            1. Выбор фотографа <br>
-            С чего следует начать выбор? Прежде всего это составить список понравившихся фотографов. Где искать фотографов? Социальные сети, сейчас очень популярный инструмент для поиска различных услуг, развлечений и в том числе фотографов. Друзья, родственники или знакомые кто уже пользовался услугами фотографов и могут порекомендовать достойного кандидата.
-          </p>
-
-          <button mat-button (click)="openDialog('Фотограф — один из важнейших свадебных подрядчиков. Мы подготовили для тебя советы, которые помогут избежать ошибок при выборе фотографа на свадьбу. С чего следует начать выбор? Прежде всего это составить список понравившихся фотографов. Где искать фотографов? Социальные сети, сейчас очень популярный инструмент для поиска различных услуг, развлечений и в том числе фотографов. Друзья, родственники или знакомые кто уже пользовался услугами фотографов и могут порекомендовать достойного кандидата.')" class="btn_mnu" mat-ripple  pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35"  >Читать далее</button>
-          <!--<button (click)="ClickButton()" class="btn_mnu" mat-ripple  pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35"  >Читать далее</button>-->
-          <!--<button class="btn_mnu" mat-button (click)="openDialog()" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35" routerLink="/PageBlog" href="#choice" >Читать далее</button>-->
-         </div>
-        <div class="container_items">
-          <img src="/assets/img/book.jpg" alt="img" class="item_images">
-          <p class="name_item">Причины печать свадебную книгу</p>
-          <p class="contain_item info_media">7 причин напечатать свадебную фотокнигу <br>
-            <br>
-            1. Одна из первых семейных реликвий <br>
-            Наверное многие помнят родительские свадебные альбомы? А сколько раз вы их пересматривали. Это память которая храниться годами и десятилетиями. А ведь представьте через 5, 10 лет сесть уже вместе со своими детьми и пересмотреть свадебную фотокнигу, прочувствовать все моменты и переживания этого дня. Это бесценно.
-          </p>
-          <button class="btn_mnu" (click)="openDialog('qwe')" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35" routerLink="/PageBlog" href="#print" >Читать далее</button>
-        </div>
-        <div class="container_items">
-          <img src="/assets/img/НОВЫЕ/ПОЛЕЗНЫЕ%20СТАТЬИ/свадебная%20подготовка.jpg" alt="img" class="item_images">
-          <p class="name_item">Свадебная подготовка.</p>
-          <p class="contain_item info_media">20 основных шагов при подготовке к свадьбе <br>
-            <br>
-            Чтобы не запутаться и подготовиться к этому дню, получая удовольствие от организации и самого свадебного дня. Предлагаю Вам, ознакомиться с 20 этапами подготовки.
-            <br>
-            <br>
-            1.	Определиться с датой и бюджетом свадьбы. <br>
-            2.	Составить список гостей. <br>
-            3.	Выбрать и купить обручальные кольца. <br>
-            4.	Выбрать место проведения свадьбы и зарезервировать его. Помните, что, если праздник планируется в летний период, рестораны и загородные отели бронировать необходимо задолго до даты свадьбы.<br>
-          </p>
-          <button class="btn_mnu" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="35" routerLink="/PageBlog" href="#wedding">Читать далее</button>
-        </div>
+        <div class="container_items" *ngFor="let article of articles | async">
+          <img src="{{article.ArticulBanner}}" alt="img" class="item_images">
+          <p class="name_item">{{article.ArticulName}}</p>
+          <p class="contain_item info_media">{{article.ArticulSmallText}}</p>
+          <button mat-button (click)="openDialog(article.ArticulFullText)" class="btn_mnu" mat-ripple  pageScroll [pageScrollDuration]="0"  >Читать далее</button>
+          </div>
       </div>
       <button class="btn_all" mat-ripple pageScroll [pageScrollDuration]="0" [pageScrollOffset]="9999" routerLink="/PageBlog" href="#top-gallery-blog">Все статьи</button>
     </div>

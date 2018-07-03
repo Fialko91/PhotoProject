@@ -1,7 +1,7 @@
 <section class="gallery-album-portfolio">
   <div class="gallery-album-portfolio-wrapper wrap">
 
-      <ngx-masonry [useImagesLoaded]="true" class="masonry_wrapper">
+      <ngx-masonry [options]="myOptions" [useImagesLoaded]="true" class="masonry_wrapper">
 
           <ngxMasonryItem class="masonry-item test" *ngFor="let item of gallery">
             <img src="{{item}}" alt="img" class="album_image">

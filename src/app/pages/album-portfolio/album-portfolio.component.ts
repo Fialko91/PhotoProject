@@ -2,6 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {FirebaseService} from '../../services/firebase.service';
 import {Subscription} from 'rxjs/Subscription';
+import { NgxMasonryOptions } from 'ngx-masonry';
 
 
 interface Album {
@@ -19,6 +20,10 @@ interface Album {
 export class AlbumPortfolioComponent implements OnInit, OnDestroy {
 
   gallery: string[];
+  myOptions: NgxMasonryOptions  = {
+    columnWidth: 101,
+    fitWidth: true
+  };
   private gallerySubscription: Subscription;
   constructor(private route: ActivatedRoute,
               private firebaseService: FirebaseService) {}
