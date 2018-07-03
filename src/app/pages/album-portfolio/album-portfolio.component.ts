@@ -24,6 +24,7 @@ export class AlbumPortfolioComponent implements OnInit, OnDestroy {
     columnWidth: 101,
     fitWidth: true
   };
+
   private gallerySubscription: Subscription;
   constructor(private route: ActivatedRoute,
               private firebaseService: FirebaseService) {}

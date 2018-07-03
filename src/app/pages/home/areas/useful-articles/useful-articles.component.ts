@@ -12,6 +12,7 @@ import {Observable} from 'rxjs/Observable';
 })
 export class UsefulArticlesComponent implements OnInit {
   articles: Observable<Articul[]>;
+
   constructor(public dialog: MatDialog, private firebaseService: FirebaseService) { }
 
   openDialog(text: string) {
