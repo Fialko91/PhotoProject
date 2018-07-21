@@ -11,7 +11,6 @@ export class UsefulComponent implements OnInit {
 
   text: string;
 
-
   constructor(public dialogRef: MatDialogRef<UsefulComponent>,
               @Inject(MAT_DIALOG_DATA) public data: {text: string}) { }
 

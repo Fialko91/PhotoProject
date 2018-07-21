@@ -3,6 +3,9 @@ import {ActivatedRoute} from '@angular/router';
 import {FirebaseService} from '../../services/firebase.service';
 import {Subscription} from 'rxjs/Subscription';
 import { NgxMasonryOptions } from 'ngx-masonry';
+import {UsefulComponent} from '../../popaps/useful/useful.component';
+import {MAT_DIALOG_DATA, MatDialog} from '@angular/material';
+import {AlbumPopupComponent} from '../../popaps/album-popup/album-popup.component';
 
 
 interface Album {
@@ -19,6 +22,7 @@ interface Album {
 })
 export class AlbumPortfolioComponent implements OnInit, OnDestroy {
 
+
   gallery: string[];
   myOptions: NgxMasonryOptions  = {
     columnWidth: 101,
@@ -26,8 +30,19 @@ export class AlbumPortfolioComponent implements OnInit, OnDestroy {
   };
 
   private gallerySubscription: Subscription;
-  constructor(private route: ActivatedRoute,
+  constructor(public dialog: MatDialog,
+              private route: ActivatedRoute,
               private firebaseService: FirebaseService) {}
+
+
+  openDialog(url: string){
+    this.dialog.open(AlbumPopupComponent, {
+      data: {
+        url: url
+      }
+    });
+    console.log(url);
+  }
 
   ngOnInit(): void {
     this.getHero();

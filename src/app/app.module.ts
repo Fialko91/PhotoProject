@@ -48,6 +48,7 @@ import { BannerPregnancyComponent } from './pages/page-pregnancy/areas/banner-pr
 import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-pregnancy/content-pregnancy.component';
 import { UsefulComponent } from './popaps/useful/useful.component';
 import { NgxMasonryModule } from 'ngx-masonry';
+import { AlbumPopupComponent } from './popaps/album-popup/album-popup.component';
 
 @NgModule({
   declarations: [
@@ -82,10 +83,12 @@ import { NgxMasonryModule } from 'ngx-masonry';
     PagePregnancyComponent,
     BannerPregnancyComponent,
     ContentPregnancyComponent,
-    UsefulComponent
+    UsefulComponent,
+    AlbumPopupComponent
   ],
   entryComponents: [
-    UsefulComponent
+    UsefulComponent,
+    AlbumPopupComponent
   ],
   imports: [
     BrowserModule,

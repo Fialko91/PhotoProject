@@ -4,17 +4,11 @@
       <ngx-masonry [options]="myOptions"  [useImagesLoaded]="true" class="masonry_wrapper">
 
           <ngxMasonryItem class="masonry-item test" *ngFor="let item of gallery">
-            <img src="{{item}}" alt="img" class="album_image">
+            <!--<img src="{{item}}" alt="img" class="album_image">-->
+            <button mat-button (click)="openDialog(item)" class="album_image_btn"><img src="{{item}}" alt="img" class="album_image"></button>
           </ngxMasonryItem>
 
       </ngx-masonry>
-
-
-    <!--<div class="container_wrapper" *ngFor="let item of gallery">-->
-      <!--<img src="{{item}}" alt="img" class="album_images">-->
-    <!--</div>-->
-
-
 
   </div>
 </section>
