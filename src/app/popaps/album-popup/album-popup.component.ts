@@ -16,6 +16,6 @@ export class AlbumPopupComponent implements OnInit {
 
   ngOnInit() {
     this.url = this.data.url;
-    console.log(this.url);
+    // console.log(this.url);
   }
 }

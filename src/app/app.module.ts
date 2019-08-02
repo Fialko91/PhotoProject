@@ -13,7 +13,7 @@ import { ContactsComponent } from './pages/home/areas/contacts/contacts.componen
 import { SwiperModule } from 'angular2-useful-swiper';
 import { AppRoutingModule } from './app-routing.modules';
 import { Pages404Component } from './pages/pages404/pages404.component';
-import { MatButtonModule, MatCheckboxModule, MatDialogModule, MatRippleModule } from '@angular/material';
+import {MatButtonModule, MatCheckboxModule, MatDialogModule, MatProgressSpinnerModule, MatRippleModule} from '@angular/material';
 import { PagePortfolioComponent } from './pages/page-portfolio/page-portfolio.component';
 import { FormsModule } from '@angular/forms';
 import { PortfolioPagePortfolioComponent } from './pages/page-portfolio/areas/portfolio-page-portfolio/portfolio-page-portfolio.component';
@@ -47,8 +47,8 @@ import { PagePregnancyComponent } from './pages/page-pregnancy/page-pregnancy.co
 import { BannerPregnancyComponent } from './pages/page-pregnancy/areas/banner-pregnancy/banner-pregnancy.component';
 import { ContentPregnancyComponent } from './pages/page-pregnancy/areas/content-pregnancy/content-pregnancy.component';
 import { UsefulComponent } from './popaps/useful/useful.component';
-import { NgxMasonryModule } from 'ngx-masonry';
 import { AlbumPopupComponent } from './popaps/album-popup/album-popup.component';
+import {NgxMasonryModule} from 'ngx-masonry';
 
 @NgModule({
   declarations: [
@@ -84,7 +84,7 @@ import { AlbumPopupComponent } from './popaps/album-popup/album-popup.component'
     BannerPregnancyComponent,
     ContentPregnancyComponent,
     UsefulComponent,
-    AlbumPopupComponent
+    AlbumPopupComponent,
   ],
   entryComponents: [
     UsefulComponent,
@@ -98,6 +98,7 @@ import { AlbumPopupComponent } from './popaps/album-popup/album-popup.component'
     AppRoutingModule,
     MatButtonModule,
     MatRippleModule,
+    MatProgressSpinnerModule,
     MatDialogModule,
     MatCheckboxModule,
     FormsModule,

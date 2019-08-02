@@ -1,12 +1,14 @@
-<section class="useful-articles">
 
-    <div class="useful-articles_wrapper wrap">
-      <div class="name_section">Полезные статьи</div>
-      <div class="container_wrapper">
-        <div class="container_items" *ngFor="let article of articles | async">
-          <img src="{{article.ArticulBanner}}" alt="img" class="item_images">
-          <p class="name_item">{{article.ArticulName}}</p>
-          <p class="contain_item info_media" [innerHtml]="article.ArticulSmallText"></p>
+<section   class="useful-articles">
+
+  <div  class="useful-articles_wrapper wrap">
+
+    <div class="name_section">Полезные статьи</div>
+    <div  class="container_wrapper">
+      <div class="container_items" *ngFor="let article of articles | async">
+        <img src="{{article.ArticulBanner}}" alt="img" class="item_images">
+        <p class="name_item">{{article.ArticulName}}</p>
+        <p class="contain_item info_media" [innerHtml]="article.ArticulSmallText"></p>
           <button mat-button (click)="openDialog(article.ArticulFullText)" class="btn_mnu" mat-ripple  pageScroll [pageScrollDuration]="0"  >Читать далее</button>
           </div>
       </div>

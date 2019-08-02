@@ -22,7 +22,7 @@ interface Album {
 })
 export class AlbumPortfolioComponent implements OnInit, OnDestroy {
 
-
+  loading = true;
   gallery: string[];
   myOptions: NgxMasonryOptions  = {
     columnWidth: 101,
@@ -35,7 +35,7 @@ export class AlbumPortfolioComponent implements OnInit, OnDestroy {
               private firebaseService: FirebaseService) {}
 
 
-  openDialog(url: string){
+  openDialog(url: string) {
     this.dialog.open(AlbumPopupComponent, {
       data: {
         url: url
@@ -48,9 +48,14 @@ export class AlbumPortfolioComponent implements OnInit, OnDestroy {
     this.getHero();
   }
 
+  doStuff(e) {
+    this.loading = false;
+  }
+
   getHero(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.gallerySubscription = this.firebaseService.getGalleryItem(id).subscribe((item: Album) => {
+    this.gallerySubscription = this.firebaseService.getGalleryItem(id)
+      .subscribe((item: Album) => {
       this.gallery = item.gallery;
     });
   }

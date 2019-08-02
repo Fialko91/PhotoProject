@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pages404.component.sass']
 })
 export class Pages404Component implements OnInit {
-
+  showMenu = true;
   constructor() { }
 
   ngOnInit() {

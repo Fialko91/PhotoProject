@@ -1,7 +1,14 @@
-<section class="gallery-album-portfolio">
+<div class="loader_wrap">
+  <mat-spinner *ngIf="loading" class="loader_com"></mat-spinner>
+</div>
+<section [ngClass]="loading ? 'visuallyhidden' : ''" class="gallery-album-portfolio">
   <div class="gallery-album-portfolio-wrapper wrap">
 
-      <ngx-masonry [options]="myOptions"  [useImagesLoaded]="true" class="masonry_wrapper">
+      <ngx-masonry
+        [options]="myOptions"
+        [useImagesLoaded]="true"
+        (layoutComplete)="doStuff($event)"
+        class="masonry_wrapper">
 
           <ngxMasonryItem class="masonry-item test" *ngFor="let item of gallery">
             <!--<img src="{{item}}" alt="img" class="album_image">-->

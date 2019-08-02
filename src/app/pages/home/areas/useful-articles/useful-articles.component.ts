@@ -13,6 +13,8 @@ import {Observable} from 'rxjs/Observable';
 export class UsefulArticlesComponent implements OnInit {
   articles: Observable<Articul[]>;
 
+  loading = true;
+
   constructor(public dialog: MatDialog, private firebaseService: FirebaseService) { }
 
   openDialog(text: string) {
@@ -21,6 +23,10 @@ export class UsefulArticlesComponent implements OnInit {
         text: text
       }
     });
+  }
+
+  doStuff(e) {
+    this.loading = true;
   }
 
   ngOnInit() {
